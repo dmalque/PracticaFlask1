@@ -1,4 +1,4 @@
-# Farmacia App - Flask
+# Productos de Farmacia App - Flask
 
 API básica de productos médicos con Flask ( GET y POST).
 

@@ -14,6 +14,17 @@ def home():
 def productos_lista():
     if request.method == 'POST':
         json = request.get_json()
+
+        #campos obligatorios
+        campos_obligatorios = ['nombre', 'cantidad', 'registro_sanitario']
+        faltantes = [c for c in campos_obligatorios if not json or c not in json]
+        if faltantes:
+            return {
+                'ok': False,
+                'message': f'Faltan campos obligatorios: {", ".join(faltantes)}',
+                'data': None
+            }, 400
+
         json['id'] = len(productos) + 1
         productos.append(json)
         return {
