@@ -1,5 +1,6 @@
 # Productos de Farmacia App - Flask
-
+G27-E 
+Alumno: Daniel Malque Urtecho
 API básica de productos médicos con Flask ( GET y POST).
 
 ## Creación del proyecto
